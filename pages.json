@@ -1,0 +1,250 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			"path": "pages/index/index",
+
+			"style": {
+				"navigationBarTitleText": "寓联伙伴",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		}, {
+			"path": "pages/house/house",
+			"style": {
+				"navigationBarTitleText": "找房",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/add_house/add_house",
+			"style": {
+				"navigationBarTitleText": "发布房源",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/deal/deal",
+			"style": {
+				"navigationBarTitleText": "成交订单",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/personal/personal",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false,
+				"disableScroll": true,
+				"backgroundColor": "#fff"
+			}
+
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "寓联系统",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		// 创建楼栋基础信息
+		{
+			"path": "pages/createFloor/createFloor",
+			"style": {
+				"navigationBarTitleText": "新建楼栋",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/searchHouse/searchHouse",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"enablePullDownRefresh": false,
+				"backgroundColor": "#ffffff"
+			}
+
+		}, {
+			"path": "pages/choose_floor/choose_floor",
+			"style": {
+				"navigationBarTitleText": "选择楼栋",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/createRoom/createRoom",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "录入房源",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/batchCreateRomm/batchCreateRomm",
+			"style": {
+				"navigationBarTitleText": "批量生成",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/floor_detail/floor_detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/room_detail/room_detail",
+			"style": {
+				"navigationBarTitleText": "房源详情",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "pages/map_house/map_house",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "地图找房",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/manage_house/manage_house",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "录盘人楼栋",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"subPackages": [{
+			"root": "customer",
+			"pages": [{
+				"path": "selfCustomer/selfCustomer",
+				"style": {
+					"navigationBarTitleText": "我的客户",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "addCustomer/addCustomer",
+				"style": {
+					"navigationBarTitleText": "新增客户",
+					"enablePullDownRefresh": false
+				}
+
+			}    ,{
+                    "path" : "detailCustomer/detailCustomer",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "客户详情",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "write_record/write_record",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+		},
+		{
+			"root": "self_page",
+			"pages": [{
+                    "path" : "selfHouse/selfHouse",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "我的房源",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+		},
+		{
+			"root": "order",
+			"pages": [
+		    {
+                    "path" : "dispatch/dispatch",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "派单",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#F4F5F9"
+	},
+	"tabBar": {
+		"color": "#7B8193",
+		"height":"0px",
+		"selectedColor": "#3366FF",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"text": "",
+				"pagePath": "pages/index/index"
+			},
+			{
+				// "iconPath": "static/image/tabbar/searchhouse.png",
+				// "selectedIconPath": "static/image/tabbar/searchhouse_on2.png",
+				"text": "",
+				"pagePath": "pages/house/house"
+
+
+			},
+			{
+				// "iconPath": "static/image/tabbar/add.png",
+				// "selectedIconPath": "static/image/tabbar/add.png",
+				"text": "",
+				"pagePath": "pages/add_house/add_house"
+
+
+			},
+			{
+				// "iconPath": "static/image/tabbar/order.png",
+				// "selectedIconPath": "static/image/tabbar/order_on.png",
+				"text": "",
+				"pagePath": "pages/deal/deal"
+
+
+			},
+			{
+				// "iconPath": "static/image/tabbar/personal.png",
+				// "selectedIconPath": "static/image/tabbar/personal_on2.png",
+				"text": "",
+				"pagePath": "pages/personal/personal"
+
+
+			}
+		]
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"fui-(.*)": "@/components/firstui/fui-$1/fui-$1.vue"
+		}
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "楼栋管理", //模式名称
+			"path": "pages/createFloor/createFloor", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}
